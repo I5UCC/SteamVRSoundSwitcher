@@ -2,15 +2,15 @@
 	"source": "builtin",
 	"applications": [
 		{
-			"app_key": "i5ucc.VoicemeeterVolumeSync",
+			"app_key": "i5ucc.SteamVRSoundSwitcher",
 			"launch_type": "binary",
-			"binary_path_windows": "./VoicemeeterVolumeSync.exe",
+			"binary_path_windows": "./SVRSS.exe",
 			"is_dashboard_overlay": true,
 
 			"strings": {
 				"en_us": {
-					"name": "VoicemeeterVolumeSync",
-					"description": "Syncs Windows Sound with Voicemeeter Potato."
+					"name": "SteamVRSoundSwitcher",
+					"description": "Sets Sound devices if SteamVR isn't reliable enough."
 				}
 			}
 		}
