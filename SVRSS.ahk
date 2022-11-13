@@ -3,6 +3,12 @@
 SetBatchLines -1
 SetWorkingDir %A_ScriptDir%
 
+IniRead, FirstStart, config.ini, Other, FirstStart
+If (FirstStart) {
+    Run, app.vrmanifest
+    IniWrite, 0, config.ini, Other, FirstStart
+}
+
 SetDevice(outp, inp) {
     RUN .\nircmd.exe setdefaultsounddevice "%outp%"
     RUN .\nircmd.exe setdefaultsounddevice "%outp%" 2
